@@ -1,70 +1,78 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap') * {
+
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
 
     body {
-        width: 100vw;
         height: 100vh;
-        background-color: #000;
+        width: 100vw;
         overflow-x: hidden;
-        font-family: 'Poppins', sans-serif;
+        background-color: black;
+
 
     }
 
-    .super::before {
-        content: "";
-        position: fixed;
+    header {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-image: url(/assets/home-bg.jpg);
+        background-size: cover;
+        position: absolute;
+        background-position: center;
+        z-index: 1000;
+        color: #fff;
+        top: 0;
+        left: 0;
+    }
+
+
+    .over-lay {
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url(/assets/home-bg.jpg);
-        /* Add the background image to the container */
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        z-index: -1;
-        opacity: 0.35;
+        background: rgba(0, 0, 0, 0.7);
     }
 
-    /* body */
 
-    header {
+    .nav-bar {
         width: 100%;
-        height: 100px;
+        height: 15%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
     nav {
+        z-index: 1;
+        height: 60%;
         width: 80%;
-        height: 70px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+
     }
 
     .nav-left {
         width: 30%;
-        height: 70px;
-        display: flex;
-        align-items: flex-start;
+        height: 100%;
+        /* border: 2px solid red; */
         display: flex;
         align-items: center;
         justify-content: flex-start;
-
     }
 
     .nav-right {
-        width: 30%;
-        height: 70px;
-        display: flex;
-        align-items: flex-start;
+        width: 25%;
+        height: 100%;
+        /* border: 2px solid red; */
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -72,14 +80,9 @@
 
     .logo {
         width: 10rem;
-        margin: 10px;
     }
 
-    #languageOption span img {
-        filter: invert(100px);
-    }
-
-    .langbtn {
+    .lang-btn {
         width: 1rem;
         height: 2rem;
         display: flex;
@@ -87,13 +90,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: .5px solid rgb(240, 240, 240);
+        border: .5px solid rgb(105, 99, 99);
         border-radius: 4px;
         padding: 0 4rem;
         z-index: 100;
         background: rgba(0, 0, 0, .5);
-
     }
+
+
 
     #languageOption {
         padding: 2px 5px;
@@ -112,17 +116,16 @@
         text-align: center;
     }
 
-    .langicon {
+    .lang-icon {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .langicon img {
+    .lang-icon img {
         width: 1.3rem;
         filter: invert(100);
     }
-
 
     .sign-in-btn {
         width: 5rem;
@@ -132,8 +135,6 @@
         align-items: center;
         justify-content: center;
         border-radius: 7px;
-
-
     }
 
     .sign-in-btn button {
@@ -159,33 +160,29 @@
 
     .section-1 {
         height: 100vh;
+        width: 100vh;
+    }
+
+
+    /* home conent */
+
+    .home-content {
+        height: 100vh;
         width: 100vw;
         color: white;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        z-index: 1000;
+        margin-top: 2rem;
+        
     }
 
-    .section-1::before {
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url(/assets/home-bg.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+    
 
-        background-attachment: fixed;
-        z-index: -1;
-        opacity: 0.35;
-
-    }
-
-
-    .section-1 div:first-child {
+    
+    .home-content div:first-child {
 
         /* background-color: blue; */
         width: 60rem;
@@ -198,21 +195,30 @@
 
     }
 
-    .section-1 div:first-child h2 {
-        font-size: 3rem;
+    .home-content div:first-child h2 {
+        font-size: 2.6rem;
         text-align: center;
         font-family: poppins;
         font-weight: 800;
-        margin-bottom: 0;
+        margin-bottom: 2rem;
+        z-index: 100;
+        font-family: 'Poppins', sans-serif;
+
+
     }
 
-    .section-1 div p {
-        font-size: 1.3rem;
-        margin: .5rem;
+    .home-content div p {
+        font-size: 1.4rem;   
+        font-family: 'Poppins', sans-serif;
+        margin: 5px;
+        z-index: 100;
+
     }
 
-    .section-1 div div:nth-child(2) {
+    .home-content div div:nth-child(2) {
         margin: 2rem;
+        z-index: 100;
+
 
     }
 
@@ -223,9 +229,11 @@
         font-size: 1rem;
         line-height: 1.5;
         background: rgba(0, 0, 0, .5);
-
-        border: 2px solid white;
+        border: 1px solid rgb(71, 69, 69);
         border-radius: 5px;
+        z-index: 100;
+        position: relative;
+
 
 
     }
@@ -233,6 +241,11 @@
 
     #email-input:active {
         color: #fff;
+        z-index: 100;
+        position: relative;
+
+
+
     }
 
     #start-btn {
@@ -247,5 +260,16 @@
         color: #fff;
         cursor: pointer;
         letter-spacing: .5px;
+        position: relative;
+        z-index: 100;
 
+    }
+
+    #start-btn:hover {
+        background-color: rgb(156, 15, 15);
+
+    }
+
+    .fa-greater-than{
+        margin-left: 1rem;
     }

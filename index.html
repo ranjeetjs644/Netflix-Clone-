@@ -7,16 +7,26 @@
     <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
     <link rel="shortcut icon" href="/assets/favicon-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
-    <div class="super">
-        <header>
+    <header>
+        <div class="over-lay"></div>
+        <div class="nav-bar">
             <nav>
-                <div class="nav-left"><img src="/assets/netflix.png" alt="" class="logo"></div>
+                <div class="nav-left">
+                    <img src="/assets/netflix.png" alt="" class="logo">
+                </div>
                 <div class="nav-right">
-                    <div class="langbtn"><span class="langicon"><img src="/assets/translate.png" alt=""></span>
+                    <div class="lang-btn">
+                        <span class="lang-icon"><img src="/assets/translate.png" alt=""></span>
                         <select name="LangSelect" id="languageOption">
                             <option value="1">Enlgish</option>
                             <option value="2">Hindi</option>
@@ -29,24 +39,29 @@
                     </div>
                 </div>
             </nav>
-        </header>
+        </div>
 
-        <main>
-            <section class="section-1">
+        <section class="home-content ">
+            <div>
+                <h2 class="head-text">Laughter. Tears. Thrills.
+                    Find it all on Netflix.</h2>
+                <p>Endless entertainment starts at just ₹ 149. Cancel anytime.</p>
+                <p>Ready to watch? Enter your email to create or restart your membership.</p>
                 <div>
-                    <h2 class="head-text">Laughter. Tears. Thrills.
-                        Find it all on Netflix.</h2>
-                    <p>Endless entertainment starts at just ₹ 149. Cancel anytime.</p>
-                    <p>Ready to watch? Enter your email to create or restart your membership.</p>
-                    <div>
-                        <input type="email" id="email-input" placeholder="Email Address"> <button type="button"
-                            id="start-btn">Get Started &nsb ></button>
-                    </div>
+                    <input type="email" id="email-input" placeholder="Email Address"> <button type="button"
+                        id="start-btn">Get Started <i class="fa-solid fa-greater-than"></i></button>
                 </div>
+            </div>
 
-            </section>
-        </main>
-    </div>
+        </section>
+
+
+    </header>
+    <section class="secion-1">
+
+    </section>
+
+
 </body>
 
 </html>
