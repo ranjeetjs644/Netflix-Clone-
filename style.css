@@ -700,7 +700,7 @@
         border-top: 8px solid rgba(44, 43, 43, 0.822);
         display: flex;
         align-items: center;
-        justify-content: center;   
+        justify-content: center;
     }
 
     footer .box {
@@ -708,13 +708,14 @@
         height: 75%;
         display: flex;
         align-items: start;
-        justify-content:center;
+        justify-content: center;
         flex-direction: column;
         /* padding:  0 5rem ; */
     }
 
-    footer .box a,footer .box p {
-        margin:  .5rem 0rem;
+    footer .box a,
+    footer .box p {
+        margin: .5rem 0rem;
         font-size: .9rem;
         font-family: poppins;
         color: #bdb9b9;
@@ -732,9 +733,11 @@
         border-radius: 4px;
         padding: 0 4rem;
         z-index: 100;
-        margin: 8px 0 ;
+        margin: 8px 0;
         background: rgba(0, 0, 0, .5);
     }
 
-
-    footer .box:first-child {}
+    footer .box a:hover,
+    footer .box p:hover {
+        color: red;
+    }
